@@ -9,3 +9,4 @@ variable "region" {
 variable "registry_name" {
   description = "registry name"
 }
+
