@@ -1,0 +1,10 @@
+resource "google_service_account" "sa-node" {
+  account_id = "sa-node"
+  display_name = "SA NODE"
+}
+
+resource "google_project_iam_member" "owner_binding" {
+  project = var.project_id
+  role    = "roles/datastore.owner"
+  member  = "serviceAccount:${google_service_account.sa-node.email}"
+}
