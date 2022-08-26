@@ -8,21 +8,21 @@ This code is responble for build a GKE Cluster with 3 nodes pool. Please follow 
 
 2- Create a new project or use the default
 
-3- Enable Compute Engine and Kubernetes Engine API
+3- Enable ** Compute Engine ** and ** Kubernetes Engine API **
 
-4- Create a service account with editor permissions and download the key (.json file). We will use this SA to build our env
+4- Create a ** service account ** with editor permissions and download the key (.json file). We will use this SA to build our GKE Cluster
 
 5- Create a bucket on GCP to store the TF state on GCP
 
 6- Fork this repo https://github.com/ralff2208/infra-api
 
-7- Change project_id variable on terraform.tfvars for your own project id
+7- Change ** project_id ** variable on ** terraform.tfvars ** for your own project id
 
-8- Change the name of bucket on backend.tf file for your bucket name that you just created (step 5)
+8- Change the ** name ** of bucket on ** backend.tf ** file for your bucket name that you just created (step 5)
 
-9- Create a secret on github actions called GOOGLE_CREDENTIALS with the content in service account key file (.json)
+9- Create a secret on github actions called ** GOOGLE_CREDENTIALS ** with the content in service account key file (.json)
 
-10- Go to git actions repo and select Terraform build GKE workflow 
+10- Go to git actions repo and select ** Terraform build GKE ** workflow 
 
 11- Click on Run Workflow, choose branch master and click again in Run Workflow
 
@@ -35,6 +35,6 @@ This code is responble for build a GKE Cluster with 3 nodes pool. Please follow 
 
 ## Destroy GKE Cluster 
 
-1- Go to git actions repo and select Terraform destroy cluster GKE workflow
+1- Go to git actions repo and select ** Terraform destroy cluster GKE ** workflow
 
 2- Click on Run Workflow, choose branch master and click again in Run Workflow
