@@ -18,7 +18,7 @@ This code is responble for build a GKE Cluster with 3 nodes pool. Please follow 
 
 7- Change project_id variable on terraform.tfvars for your own project id
 
-8- Change the name of bucket on backend.tf for your bucket name that you just created (step 4)
+8- Change the name of bucket on backend.tf file for your bucket name that you just created (step 5)
 
 9- Create a secret on github actions called GOOGLE_CREDENTIALS with the content in service account key file (.json)
 
