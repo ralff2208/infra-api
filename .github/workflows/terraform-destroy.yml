@@ -18,6 +18,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Terraform Init
+        id: init
+        #run: terraform init --reconfigure
+        run: terraform init
+
+
       - name: Terraform destroy 
         id: destroy 
         run: terraform destroy -auto-approve
