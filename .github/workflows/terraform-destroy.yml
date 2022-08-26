@@ -1,0 +1,23 @@
+name: "Terraform destroy cluster GKE"
+
+on:
+  pull_request:
+    branches:
+      - destroy
+
+  workflow_dispatch:
+
+jobs:
+  terraform:
+    env:
+        GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+    name: "Terraform"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Terraform destroy 
+        id: destroy 
+        run: terraform destroy -auto-approved
