@@ -1,6 +1,8 @@
-# Building GKE Cluster
+# Building a GKE Cluster
 
 This code is responble for build a GKE Cluster with 3 nodes pool. Please follow these steps below:   
+
+## Step by Step to run this terraform 
 
 1- Create a GCP account 
 
@@ -20,4 +22,17 @@ This code is responble for build a GKE Cluster with 3 nodes pool. Please follow 
 
 9- Create a secret on github actions called GOOGLE_CREDENTIALS with the content in service account key file (.json)
 
-10- Run git actions pipeline for build GKE cluster
+10- Go to git actions repo and select Terraform build GKE workflow 
+
+11- Click on Run Workflow, choose branch master and click again in Run Workflow
+
+## Monitoring 
+
+## Logging
+
+
+## Destroy GKE Cluster 
+
+1- Go to git actions repo and select Terraform destroy cluster GKE workflow
+
+2- Click on Run Workflow, choose branch master and click again in Run Workflow
