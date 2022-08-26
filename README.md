@@ -28,10 +28,10 @@ This code is responble for build a GKE Cluster with 3 nodes pool. Please follow 
 
 
 ## Monitoring 
-
+For monitoring the Cluster, nodes and pods, we are using monitoring tool from GCP: https://console.cloud.google.com/monitoring/dashboards/resourceList/kubernetes
 
 ## Logging
-
+For logging, we are using the logging tool from GPC: https://console.cloud.google.com/logs/dashboard
 
 ## Destroy GKE Cluster 
 
